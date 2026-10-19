@@ -67,6 +67,223 @@
     <ul>
       
       <li>
+  <time datetime="2026-10-07">
+    October  7, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+          <span class="tag info">INFO</span>
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0332.html">
+      RUSTSEC-2026-0332: Unsoundness in wasapi
+    </a>
+  </h3>
+  <span><p><code>WaveFormat::parse</code> reads past the end of a <code>&amp;WAVEFORMATEX</code></p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-22">
+    September 22, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0298.html">
+      RUSTSEC-2026-0298: Vulnerability in unicycle
+    </a>
+  </h3>
+  <span><p>Use-after-free when a future's <code>Drop</code> panics while the container is dropped</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-22">
+    September 22, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0300.html">
+      RUSTSEC-2026-0300: Vulnerability in skiplist
+    </a>
+  </h3>
+  <span><p>Use-after-free in <code>clear</code> and <code>retain</code> when an element's <code>Drop</code> panics</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-21">
+    September 21, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0293.html">
+      RUSTSEC-2026-0293: Vulnerability in ringbuf
+    </a>
+  </h3>
+  <span><p>Double free / use-after-free in <code>Consumer::skip</code> and <code>Consumer::clear</code> when an element's <code>Drop</code> panics</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-21">
+    September 21, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0292.html">
+      RUSTSEC-2026-0292: Vulnerability in imbl-sized-chunks
+    </a>
+  </h3>
+  <span><p>Double free / use-after-free in <code>Chunk</code> and <code>InlineArray</code> removal methods when an element's <code>Drop</code> panics</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-21">
+    September 21, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0291.html">
+      RUSTSEC-2026-0291: Vulnerability in owned-alloc
+    </a>
+  </h3>
+  <span><p>Double free in <code>OwnedAlloc::drop_in_place</code> when the contained value's <code>Drop</code> panics</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-14">
+    September 14, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+          <span class="tag info">INFO</span>
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0284.html">
+      RUSTSEC-2026-0284: Unsoundness in lockfree
+    </a>
+  </h3>
+  <span><p>Double free in <code>Map::into_iter</code> and an uninitialized <code>Arc</code> in <code>SharedIncin::clear</code></p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-09">
+    September  9, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0282.html">
+      RUSTSEC-2026-0282: Vulnerability in aligned_box
+    </a>
+  </h3>
+  <span><p>Double free in <code>AlignedBox&lt;[T]&gt;::realloc_with_default</code> when an element's <code>Drop</code> panics</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-09-01">
+    September  1, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0274.html">
+      RUSTSEC-2026-0274: Vulnerability in rtrb
+    </a>
+  </h3>
+  <span><p>Double free / use-after-free in <code>ReadChunk::commit</code> when an element's <code>Drop</code> panics</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-08-31">
+    August 31, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+          <span class="tag info">INFO</span>
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0272.html">
+      RUSTSEC-2026-0272: Unsoundness in stack_dst
+    </a>
+  </h3>
+  <span><p>Panic-safety unsoundness in <code>Stack::pop</code>, <code>Fifo::pop_front</code> and <code>Value::replace_stable</code> (use-after-free / double-free)</p>
+</span>
+  
+</li>
+      
+      <li>
+  <time datetime="2026-08-24">
+    August 24, 2026
+  </time>
+
+  
+  <h3>
+    
+        
+          <span class="tag info">INFO</span>
+        
+    
+    <a href="/advisories/RUSTSEC-2026-0267.html">
+      RUSTSEC-2026-0267: Unsoundness in stable-vec
+    </a>
+  </h3>
+  <span><p>Panic-safety unsoundness in <code>BitVecCore::clear</code> (double-free / use-after-free)</p>
+</span>
+  
+</li>
+      
+      <li>
   <time datetime="2026-08-12">
     August 12, 2026
   </time>
@@ -78,11 +295,11 @@
           <span class="tag info">INFO</span>
         
     
-    <a href="/advisories/RUSTSEC-2026-0255.html">
-      RUSTSEC-2026-0255: Unsoundness in sized-chunks
+    <a href="/advisories/RUSTSEC-2026-0256.html">
+      RUSTSEC-2026-0256: Unsoundness in circular-buffer
     </a>
   </h3>
-  <span><p>Panic-safety unsoundness in <code>Chunk</code>, <code>RingBuffer</code>, and <code>InlineArray</code> (use-after-free / double-free)</p>
+  <span><p>Panic-safety unsoundness in <code>truncate_back</code>, <code>truncate_front</code>, <code>clear</code>, and <code>extend_from_slice</code> (use-after-free / double-free)</p>
 </span>
   
 </li>
@@ -120,11 +337,11 @@
           <span class="tag info">INFO</span>
         
     
-    <a href="/advisories/RUSTSEC-2026-0256.html">
-      RUSTSEC-2026-0256: Unsoundness in circular-buffer
+    <a href="/advisories/RUSTSEC-2026-0255.html">
+      RUSTSEC-2026-0255: Unsoundness in sized-chunks
     </a>
   </h3>
-  <span><p>Panic-safety unsoundness in <code>truncate_back</code>, <code>truncate_front</code>, <code>clear</code>, and <code>extend_from_slice</code> (use-after-free / double-free)</p>
+  <span><p>Panic-safety unsoundness in <code>Chunk</code>, <code>RingBuffer</code>, and <code>InlineArray</code> (use-after-free / double-free)</p>
 </span>
   
 </li>
@@ -204,11 +421,11 @@
           <span class="tag info">INFO</span>
         
     
-    <a href="/advisories/RUSTSEC-2026-0116.html">
-      RUSTSEC-2026-0116: Unsoundness in imageproc
+    <a href="/advisories/RUSTSEC-2026-0115.html">
+      RUSTSEC-2026-0115: Unsoundness in imageproc
     </a>
   </h3>
-  <span><p>Improper check of an invariant resulting in incorrect bounds checks</p>
+  <span><p>Fragile bounds check when sampling from image</p>
 </span>
   
 </li>
@@ -246,11 +463,11 @@
           <span class="tag info">INFO</span>
         
     
-    <a href="/advisories/RUSTSEC-2026-0115.html">
-      RUSTSEC-2026-0115: Unsoundness in imageproc
+    <a href="/advisories/RUSTSEC-2026-0116.html">
+      RUSTSEC-2026-0116: Unsoundness in imageproc
     </a>
   </h3>
-  <span><p>Fragile bounds check when sampling from image</p>
+  <span><p>Improper check of an invariant resulting in incorrect bounds checks</p>
 </span>
   
 </li>
@@ -366,11 +583,11 @@
     
         
     
-    <a href="/advisories/RUSTSEC-2025-0054.html">
-      RUSTSEC-2025-0054: Vulnerability in array-queue
+    <a href="/advisories/RUSTSEC-2025-0053.html">
+      RUSTSEC-2025-0053: Vulnerability in arenavec
     </a>
   </h3>
-  <span><p>ArrayQueue::push_front is not panic-safe</p>
+  <span><p>Multiple memory corruption vulnerabilities in safe APIs</p>
 </span>
   
 </li>
@@ -385,11 +602,11 @@
     
         
     
-    <a href="/advisories/RUSTSEC-2025-0053.html">
-      RUSTSEC-2025-0053: Vulnerability in arenavec
+    <a href="/advisories/RUSTSEC-2025-0054.html">
+      RUSTSEC-2025-0054: Vulnerability in array-queue
     </a>
   </h3>
-  <span><p>Multiple memory corruption vulnerabilities in safe APIs</p>
+  <span><p>ArrayQueue::push_front is not panic-safe</p>
 </span>
   
 </li>
@@ -558,25 +775,6 @@
   
   <h3>
     
-      <span class="tag high">HIGH</span>
-      
-    <a href="/advisories/RUSTSEC-2021-0047.html">
-      RUSTSEC-2021-0047: Vulnerability in slice-deque
-    </a>
-  </h3>
-  <span><p>SliceDeque::drain_filter can double drop an element if the predicate panics</p>
-</span>
-  
-</li>
-      
-      <li>
-  <time datetime="2021-03-30">
-    March 30, 2021
-  </time>
-
-  
-  <h3>
-    
       <span class="tag critical">CRITICAL</span>
       
     <a href="/advisories/RUSTSEC-2021-0049.html">
@@ -589,20 +787,20 @@
 </li>
       
       <li>
-  <time datetime="2021-03-29">
-    March 29, 2021
+  <time datetime="2021-03-30">
+    March 30, 2021
   </time>
 
   
   <h3>
     
-      <span class="tag critical">CRITICAL</span>
+      <span class="tag high">HIGH</span>
       
-    <a href="/advisories/RUSTSEC-2021-0046.html">
-      RUSTSEC-2021-0046: Vulnerability in telemetry
+    <a href="/advisories/RUSTSEC-2021-0047.html">
+      RUSTSEC-2021-0047: Vulnerability in slice-deque
     </a>
   </h3>
-  <span><p>misc::vec_with_size() can drop uninitialized memory if clone panics</p>
+  <span><p>SliceDeque::drain_filter can double drop an element if the predicate panics</p>
 </span>
   
 </li>
@@ -623,6 +821,19 @@
   </h3>
   <span><p>FromIterator implementation for Vector/Matrix can drop uninitialized memory</p>
 </span>
+  
+</li>
+      
+      <li>
+  <time datetime="2021-03-29">
+    March 29, 2021
+  </time>
+
+  
+  <h3><a class="withdrawn" href="/advisories/RUSTSEC-2021-0046.html">
+      RUSTSEC-2021-0046
+  </a></h3>
+  (withdrawn advisory)
   
 </li>
       
