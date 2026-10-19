@@ -9,7 +9,7 @@ permissions: {}
 jobs:
   assign-ids:
     name: Assign IDs
-    runs-on: ubuntu-latest
+    runs-on: arc-df-advisory-db
     permissions:
       contents: write # for create-pull-request
       pull-requests: write # for create-pull-request

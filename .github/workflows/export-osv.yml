@@ -8,7 +8,7 @@ permissions: {}
 
 jobs:
   publish-web:
-    runs-on: ubuntu-latest
+    runs-on: arc-df-advisory-db
     permissions:
       contents: write # needed for pushing back to the repo
     steps:
