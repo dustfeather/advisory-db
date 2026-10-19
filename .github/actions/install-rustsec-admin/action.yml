@@ -21,6 +21,20 @@ runs:
         path: ~/.cargo/bin
         key: rustsec-admin-${{ inputs.rev }}
 
+    # The ARC runner image (self-hosted pool) ships no Rust toolchain and does
+    # not put ~/.cargo/bin on PATH; ubuntu-latest did both. Install the
+    # toolchain only when there is something to build, and expose the bin dir
+    # either way so a cache hit is usable too.
+    - name: Install Rust toolchain
+      if: steps.admin-cache.outputs.cache-hit != 'true'
+      uses: dtolnay/rust-toolchain@683b588c487a69d01f6c6ddf40f036ff682cc2c8 # stable
+      with:
+        toolchain: stable
+
+    - name: Put cargo bin on PATH
+      shell: bash
+      run: echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+
     - name: Install rustsec-admin
       if: steps.admin-cache.outputs.cache-hit != 'true'
       shell: bash
